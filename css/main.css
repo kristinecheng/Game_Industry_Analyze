@@ -67,15 +67,15 @@ bar-text h2 {
 }
 
 #reference h1 {
-  color: black;
+  color: white;
 }
 
 #reference h2 {
-  color: black;
+  color: white;
 }
 
 #reference a {
-  color: black;
+  color: white;
 }
 
 label {
@@ -131,7 +131,7 @@ span {
   background: black !important;
 }
 
-#overview-chart-area svg {
+#overview-section svg {
   margin-left: auto;
   margin-right: auto;
   display: block;

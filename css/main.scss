@@ -60,13 +60,13 @@ bar-text {
 }
 #reference{
     h1 {
-        color: black;
+        color: white;
     }
     h2 {
-        color: black;
+        color: white;
     }
     a {
-        color: black;
+        color: white;
     }
 }
 label {
@@ -132,7 +132,7 @@ span {
     background: black !important;
 }
 
-#overview-chart-area svg {
+#overview-section svg {
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -283,9 +283,6 @@ span {
     left: -8px;
   }
   
-
-
-
   text.annotation {
     font-size: 13px;
     font-style: italic;
