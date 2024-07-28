@@ -38,8 +38,6 @@ const area = d3.scaleLinear()
 	.domain([2000, 1400000000])
 const genreColor = d3.scaleOrdinal(d3.schemePastel1)
 
-
-
 // Labels
 const xLabel1 = g1.append("text")
 	.attr("y", HEIGHT1 + 50)
@@ -60,7 +58,7 @@ const timeLabel = g1.append("text")
 	.attr("font-size", "40px")
 	.attr("opacity", "0.4")
 	.attr("text-anchor", "middle")
-	.text("1880")
+	.text("1980")
 
 // X Axis
 const xAxisCall1 = d3.axisBottom(x1)
@@ -76,7 +74,7 @@ g1.append("g")
 	.attr("class", "y axis")
 	.call(yAxisCall1)
 
-const genres = ['Sports', 'Platform', 'Racing', 'Role-Playing', 'Puzzle', 'Misc', 'Shooter', 'Simulation', 'Action', 'Fighting', 'Adventure', 'Strategy']
+const genres = ["Action", "Adventure", "Fighting", "Misc", "Platform", "Puzzle", "Racing", "Role-Playing", "Shooter", "Simulation", "Sports", "Strategy"]
 const legend = g1.append("g")
 	.attr("transform", `translate(${WIDTH1}, ${HEIGHT1 - 300})`)
 
@@ -125,7 +123,7 @@ $("#play-button")
 		const button = $(this)
 		if (button.text() === "Play") {
 			button.text("Pause")
-			interval = setInterval(step, 100)
+			interval = setInterval(step, 300)
 		}
 		else {
 			button.text("Play")
@@ -145,11 +143,11 @@ $("#reset-button")
 	})
 
 $("#date-slider").slider({
-	min: 1880,
+	min: 1980,
 	max: 2016,
 	step: 1,
 	slide: (event, ui) => {
-		time = ui.value - 1880
+		time = ui.value - 1980
 		update1(formattedData[time])
 	}
 })
@@ -195,9 +193,9 @@ function drawAnnotation() {
         .attr("r", d => Math.sqrt(area(d.global_sales) / Math.PI))
   
     // update the time label
-    timeLabel.text(String(time + 1880))
+    timeLabel.text(String(time + 1980))
   
-    $("#year")[0].innerHTML = String(time + 1880)
-    $("#date-slider").slider("value", Number(time + 1880))
+    $("#year")[0].innerHTML = String(time + 1980)
+    $("#date-slider").slider("value", Number(time + 1980))
   }
   
