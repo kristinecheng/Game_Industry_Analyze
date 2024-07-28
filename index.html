@@ -23,7 +23,7 @@
                         The dataset itself contains various game information including publisher/developer, revenue for different region, year published, and genre.</p>
                 </div>       
             </div>
-            <!-- Section 1: Pie Chart for Data Overview-->
+            <!-- Section 1: Data Overview with interactive scatter plot -->
             <div class="section s1">
                 <div class="container">
                     <div class="row">
@@ -66,6 +66,26 @@
                         <p>At this scene, you could find changes through 1980 to 2016 years in different fields in different games.<br>
                             Users are able to choose different genres to view the revenue, and can also slide the year bar to explore 
                             the growth of different game genres. 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section s2">
+                <h1>Sales Distribution by Year</h1>
+                <div class="container">
+                    <div class = "row">
+                        <label for = "year-select">Select Year: </label>
+                        <select id = "year-select"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="barchart-section"></div> 
+                        </div>
+                    </div>
+                    <div id="content_div">
+                        <h2>Scene 2</h2>
+                        <p>At this scene, you could explore sales distribution for each year. Users are able to choose different year to view details of sales.
                         </p>
                     </div>
                 </div>
@@ -116,6 +136,7 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="crossorigin="anonymous"></script>
 	<script src="js/d3-tip.js"></script>
 	<!-- Custom JS -->
-	<script src="js/overview.js"></script>       
+	<script src="js/overview.js"></script>  
+    <script src="js/barchart.js"></script>     
     </body>
 </html>
