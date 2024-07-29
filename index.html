@@ -91,6 +91,27 @@
                 </div>
             </div>
 
+            <div class="section s3">
+                <h1>Market Share by Gerne</h1>
+                <div class="container">
+                    <div class = "row">
+                        <label for = "year-select">Select Year: </label>
+                        <select id = "pie-year-select"></select>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div id="piechart-section"></div> 
+                        </div>
+                    </div>
+                    <div id="sidebar"></div>
+                    <div id="content_div">
+                        <h2>Scene 3</h2>
+                        <p>This scene provides an overview of market share by genre based on user count. The pie chart will show the percentage of total user count attributed to each genre.</p>
+                    </p>
+                    </div>
+                </div>
+            </div>
+
             <div class="section s4">
                 <div id="reference">
                     <h1>References and Resources</h1>
@@ -134,9 +155,10 @@
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="crossorigin="anonymous"></script>
-	<script src="js/d3-tip.js"></script>
+    <script src="js/d3-tip.js"></script>
 	<!-- Custom JS -->
 	<script src="js/overview.js"></script>  
-    <script src="js/barchart.js"></script>     
+    <script src="js/barchart.js"></script>  
+    <script src="js/piechart.js"></script>   
     </body>
 </html>
